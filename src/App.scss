@@ -1,0 +1,102 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    gap:4rem;
+    background-color: #f5f5f5;
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .counter{
+        font-size: 2rem;
+         aspect-ratio: 1/1;
+        h3 {
+            margin: 0 0.5rem;
+            padding: 3rem;
+            border: 1px solid #ccc;
+            border-radius:50%;
+            aspect-ratio: 1/1;
+        }
+    }
+    input {
+        max-width: 40rem;
+        width: 100%;
+        background-color: #fff;
+        font-size: 1.4rem;
+        color: #242424;
+        padding: .15rem .5rem;
+        min-height: 40px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        line-height: 1.15;
+        box-shadow: 0px 10px 20px -18px;
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      input:focus {
+        border-bottom: 2px solid #5b5fc7;
+        border-radius: 4px 4px 2px 2px;
+      }
+      
+      input:hover {
+        outline: 1px solid lightgrey;
+      }
+      button {
+        --color: #0077ff;
+        font-family: inherit;
+        display: inline-block;
+        width: 6em;
+        height: 2.6em;
+        line-height: 2.5em;
+        overflow: hidden;
+        margin: 20px;
+        font-size: 17px;
+        z-index: 1;
+        color: var(--color);
+        border: 2px solid var(--color);
+        border-radius: 6px;
+        position: relative;
+        cursor: pointer;
+      }
+      
+      button::before {
+        position: absolute;
+        content: "";
+        background: var(--color);
+        width: 150px;
+        height: 200px;
+        z-index: -1;
+        border-radius: 50%;
+      }
+      
+      button:hover {
+        color: white;
+      }
+      
+      button:before {
+        top: 100%;
+        left: 100%;
+        transition: .3s all;
+      }
+      
+      button:hover::before {
+        top: -30px;
+        left: -30px;
+      }
+      .token {
+        padding : 1rem 2.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        font-size: 1.4rem;  
+      }
+}
+
+
+
+
